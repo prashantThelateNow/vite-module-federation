@@ -1,14 +1,14 @@
-// import { useEffect, useRef } from "react";
-// import { mount } from "remote2/VueApp";
+import { useEffect, useRef } from "react";
+import { mount } from "remote2/VueApp";
 
-// const VueApp = () => {
-//   const ref = useRef(null);
+const VueApp = () => {
+  const ref = useRef(null);
 
-//   useEffect(() => {
-//     mount(ref.current);
-//   }, []);
+  useEffect(() => {
+    mount(ref.current);
+  }, []);
 
-//   return <div ref={ref} />;
-// };
+  return <div ref={ref} />;
+};
 
-// export default VueApp;
+export default VueApp;

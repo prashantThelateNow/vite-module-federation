@@ -1,8 +1,8 @@
 import React from "react";
-// import ReactApp from "remote1/ReactApp";
+import ReactApp from "remote1/ReactApp";
 import Home from "../components/Home";
 import Layout from "../components/Layout";
-// import VueApp from "../components/VueApp";
+import VueApp from "../components/VueApp";
 
 interface Route {
   path: string;
@@ -19,14 +19,14 @@ const routes: Route[] = [
         path: "/",
         component: <Home />,
       },
-      // {
-      //   path: "/remote1",
-      //   component: <ReactApp />,
-      // },
-      // {
-      //   path: "/remote2",
-      //   component: <VueApp />,
-      // },
+      {
+        path: "/remote1",
+        component: <ReactApp />,
+      },
+      {
+        path: "/remote2",
+        component: <VueApp />,
+      },
     ],
   },
 ];
